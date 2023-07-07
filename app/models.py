@@ -41,3 +41,6 @@ class MyOrders(models.Model):
     delivery=models.BooleanField(default=False)
     def __int__(self):
         return self.id
+    
+    def __str__(self):
+        return self.name
